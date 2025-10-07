@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TGSRTC BUS PASS</title>
+  </head>
+  <body>
+    <h1 align="center">TELANGANA STATE ROAD TRANSPORT CORPORATION</h1>
+    <h2 align="center">GENERAL BUS PASS APPLICATION</h2>
+    <fieldset>
+      <legend><b>Applicant details</b></legend>
+      <form>
+        <label for="name">Name*</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          maxlength="20"
+          required
+        /><br />
+        <span style="color: red">(Maximum Characters: 20)</span><br /><br />
+
+        <label for="father">Father's / Gaurdian's Name*</label>
+        <input type="text" id="father" name="father" required /><br /><br />
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label for="gender">Gender*</label>
+        <input
+          type="radio"
+          id="female"
+          name="gender"
+          value="Female"
+          required
+        />female <input type="radio" id="male" name="gender" value="Male" />Male
+        <br /><br />
+
+        <label>Age As on:</label>
+        <input type="number" name="years" placeholder="Years" />
+        <input type="number" name="months" placeholder="Months" />
+        <input type="number" name="days" placeholder="Days" /><br /><br />
+
+        <label for="aadhar">Aadhar No:</label>
+        <input type="text" id="aadhar" name="aadhar" /><br /><br />
+
+        <label for="whatsapp">WhatsApp No*</label>
+        <input type="text" id="whatsapp" name="whatsapp" required /><br /><br />
+
+        <label for="email">E-mail Id*</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="photo">Photo</label>
+        <input type="file" id="photo" name="photo" required /><br /><br />
+      </form>
+    </fieldset>
+    <br />
+
+    <fieldset>
+      <legend><b>Residential Address Details</b></legend>
+      <form>
+        <label for="address">Applicant's Address</label>
+        <textarea
+          id="address"
+          name="address"
+          rows="3"
+          cols="30"
+          maxlength="200"
+          required
+        ></textarea
+        ><br />
+        <span style="color: red">(Maximum Characters: 20)</span><br /><br />
+
+        <label for="district">District*</label>
+        <select id="district" name="district">
+          <option value="Hyderabad">Hyderabad</option></select
+        ><br /><br />
+        <label for="mandal">Mandal*</label>
+        <select id="mandal" name="mandal">
+          <option value="Hyderabad">Hyderabad</option></select
+        ><br /><br />
+
+        <label for="village">Village*</label>
+        <select id="village" name="village">
+          <option value="Hyderabad">Hyderabad</option></select
+        ><br /><br />
+
+        <label for="pincode">Pincode*</label>
+        <input type="text" id="pincode" name="pincode required" />
+      </form>
+    </fieldset>
+    <br />
+    <fieldset>
+      <legend><b>Pass Type Details</b></legend>
+      <form>
+        <label for="city">City*</label>
+        <input type="text" id="city" name="city" value="Hyderabad" />
+
+        <label for="passtype">Pass Type</label>
+        <select id="passtype" name="passtype" required>
+          <option value="">----Select----</option>
+          <option value="Greater Pass">Greater Pass</option>
+          <option value="General Ordinary Route Pass Mtly">
+            General Ordinary Route Pass
+          </option>
+          <option value="General Metro Express Route Pass Mtly">
+            General Metro Express Route Pass Mtly
+          </option>
+          <option value="Ordinary Express Pass">Ordinary Express Pass</option>
+          <option value="Metro Express Pass">Metro Express Pass</option>
+          <option value="Metro Deluxe Pass">Metro Deluxe Pass</option>
+        </select>
+      </form>
+    </fieldset>
+    <br />
+    <fieldset>
+      <legend><b>Mode of Payment</b></legend>
+      <form>
+        <label for="paymentmode">Payment Mode*</label>
+        <select id="paymentmode" name="paymentmode" required>
+          <option value="">Select Payment Mode</option>
+          <option value="payment at counter">Payment at Counter</option>
+        </select>
+        <label for="pass delivery mode">Pass Delivery Mode*</label>
+        <select id="pass delivery mode" name="pass delivery mode" required>
+          <option value="">Select Pass Delivery Mode</option>
+          <option value="At Counter">At Counter</option>
+        </select>
+      </form>
+    </fieldset>
+    <br />
+    <center>
+      <input type="submit" value="Submit" />
+    </center>
+  </body>
+</html>
