@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semantic Navbar and Multi-Media</title>
+  </head>
+  <body>
+    <header style="text-align: center">
+      <h1>Semantic Navbar and Multi-Media</h1>
+    </header>
+    <nav style="background-color: #415a77; padding: 0.5px">
+      <ul style="display: flex; gap: 7rem; list-style: none">
+        <li>
+          <a href="#images" style="color: white; text-decoration: none"
+            >Images</a
+          >
+        </li>
+        <li>
+          <a href="#audios" style="color: white; text-decoration: none"
+            >Audios</a
+          >
+        </li>
+        <li>
+          <a href="#videos" style="color: white; text-decoration: none"
+            >Videos</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <br />
+    <main>
+      <section
+        id="images"
+        style="display: flex; align-items: center; flex-direction: column"
+      >
+        <h2>3 Random Images</h2>
+        <img
+          src="https://picsum.photos/id/123/200/300"
+          alt="Random image"
+          style="width: 200px; height: auto"
+        /><br />
+        <img
+          src="https://picsum.photos/id/124/200/300"
+          alt="Random image"
+          style="width: 200px; height: auto"
+        /><br />
+        <img
+          src="https://picsum.photos/id/125/200/300"
+          alt="Random image"
+          style="width: 200px; height: auto"
+        /><br />
+      </section>
+      <br />
+      <br />
+      <br />
+      <h2 style="text-align: center">3 Random Audios</h2>
+      <section
+        id="audios"
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        "
+      >
+        <audio
+          src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3"
+          controls
+        ></audio
+        ><br />
+        <audio
+          src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg"
+          controls
+        ></audio>
+        <br />
+        <audio
+          src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3"
+          controls
+        ></audio>
+      </section>
+      <br />
+      <br />
+      <br />
+      <h2 style="text-align: center">3 Random Videos</h2>
+      <section
+        id="videos"
+        style="display: flex; align-items: center; flex-direction: column"
+      >
+        <video
+          src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+          controls
+          width="500px"
+        ></video>
+        <br />
+        <video
+          src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+          controls
+          width="500px"
+        ></video>
+        <br />
+        <video
+          src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
+          controls
+          width="500px"
+        ></video>
+      </section>
+    </main>
+  </body>
+</html>
