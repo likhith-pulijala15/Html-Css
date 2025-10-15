@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-family: Verdana, sans-serif;
+        font-size: 15px;
+        line-height: 1.5;
+        letter-spacing: 4px;
+        overflow-x: hidden;
+      }
+
+      a {
+        text-decoration: none;
+        padding: 10px;
+      }
+
+      a:hover {
+        background-color: #ccc;
+      }
+
+      p {
+        letter-spacing: 1px;
+        margin-left: 50px;
+        margin-right: 40px;
+        text-align: left;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-weight: 400;
+        margin: 10px 0;
+      }
+
+      .navbar {
+        background-color: #ffffff;
+        height: 55px;
+        width: 1360px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        padding-left: 30px;
+        padding-right: 50px;
+      }
+
+      .navbar a {
+        margin-left: 10px;
+        color: black;
+      }
+
+      .img-container {
+        position: relative;
+      }
+
+      .head-img {
+        height: 750px;
+        width: 100%;
+      }
+
+      .img-text {
+        position: absolute;
+        top: 45%;
+        left: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .box-text {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        font-size: 32px;
+        padding: 5px 16px;
+        margin-right: 8px;
+        letter-spacing: 4px;
+        opacity: 0.7;
+      }
+
+      .plain-text {
+        color: white;
+        font-size: 32px;
+        letter-spacing: 4px;
+      }
+
+      .projects-heading {
+        border-bottom: 1px solid #ccc;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 30px;
+        margin: 10px 20px;
+        text-align: left;
+        font-size: 22px;
+        letter-spacing: 1px;
+      }
+
+      .projects-images {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 40px;
+        margin-left: 70px;
+        margin-bottom: 50px;
+      }
+
+      .images {
+        position: relative;
+        height: 210px;
+        width: 310px;
+      }
+
+      .images img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .pj-img-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        text-align: center;
+        letter-spacing: 1px;
+        background-color: #000000;
+        color: #ffffff;
+      }
+
+      .about {
+        display: inline-block;
+        margin: 20px;
+      }
+      .image {
+        height: 200px;
+        width: 300px;
+        margin: 30px;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .team-section {
+        display: inline-block;
+      }
+
+      .team-card {
+        display: inline-block;
+        width: 300px;
+        background-color: #fff;
+        text-align: left;
+        padding-left: 10px;
+        margin: 10px;
+        vertical-align: top;
+      }
+
+      .team-card img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .team-card h2 {
+        margin: 10px 0 5px;
+        font-size: 20px;
+      }
+
+      .team-card h4 {
+        color: gray;
+        margin-bottom: 10px;
+      }
+
+      .team-card p {
+        font-size: 14px;
+        text-align: left;
+        color: #333;
+      }
+
+      .team-card button {
+        width: 100%;
+        padding: 10px;
+        background-color: #f1f1f1;
+        cursor: pointer;
+        font-size: 16px;
+        border: none;
+        transition: background-color 0.3s ease;
+      }
+
+      .team-card button:hover {
+        background-color: #bfbfbf;
+      }
+
+      .contact-section {
+        padding: 40px 20px;
+        margin-bottom: 30px;
+        text-align: left;
+        background: #f9f9f9;
+      }
+
+      .contact-section h2 {
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
+
+      .contact-section p {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 30px;
+      }
+
+      .contact-form {
+        max-width: 100%;
+        margin: 10px 20px;
+        text-align: left;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+
+      .contact-form button {
+        background: black;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .contact-form button:hover {
+        background: #333;
+      }
+
+      .bottom-img {
+        height: 800px;
+        width: 100%;
+      }
+
+      .foot {
+        height: 200px;
+        width: 100%;
+        background-color: black;
+        color: white;
+      }
+
+      .foot p {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="logo" href="#"><b>BR</b> Architects</a>
+      <div class="nav-anchor">
+        <a href="#">Projects</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+    <header>
+      <div class="img-container">
+        <img
+          class="head-img"
+          src="Images/Top Building.jpg"
+          alt="Architect Building"
+        />
+
+        <div class="img-text">
+          <span class="box-text">BR</span>
+          <span class="plain-text">Architects</span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="projects-heading">
+        <h3>Projects</h3>
+      </div>
+
+      <div class="projects-images">
+        <div class="images">
+          <img src="Images/Summer House.jpg" alt="summer house" />
+          <div class="pj-img-text">Summer House</div>
+        </div>
+        <div class="images">
+          <img src="Images/Brick House.jpg" alt="Brick House" />
+          <div class="pj-img-text">Brick House</div>
+        </div>
+        <div class="images">
+          <img src="Images/Renovated.jpg" alt="Renovated" />
+          <div class="pj-img-text">Renovated</div>
+        </div>
+        <div class="images">
+          <img src="Images/Barn House.jpg" alt="Barn House" />
+          <div class="pj-img-text">Barn House</div>
+        </div>
+        <div class="images">
+          <img src="Images/Summer House 2.jpg" alt="summer house" />
+          <div class="pj-img-text">Summer House</div>
+        </div>
+        <div class="images">
+          <img src="Images/Brick House 2.jpg" alt="Brick House" />
+          <div class="pj-img-text">Brick House</div>
+        </div>
+        <div class="images">
+          <img src="Images/Renovated House 2.jpg" alt="Renovated" />
+          <div class="pj-img-text">Renovated</div>
+        </div>
+        <div class="images">
+          <img src="Images/Barn House 2.jpg" alt="Barn House" />
+          <div class="pj-img-text">Barn House</div>
+        </div>
+      </div>
+
+      <div class="about">
+        <h3>About</h3>
+      </div>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis sed
+        omnis quos rerum labore aut, sunt dicta iste nisi obcaecati quidem. Non
+        eum est doloremque dignissimos debitis earum porro optio? Dolore minus
+        voluptatem itaque vitae, culpa perferendis, eius iste provident
+        excepturi repudiandae impedit? Itaque, quo eius. Iusto et, earum commodi
+        labore iure impedit similique aspernatur praesentium delectus
+        consequuntur dolore temporibus! Magnam dolore deserunt mollitia expedita
+        laboriosam consectetur asperiores impedit saepe.
+      </p>
+
+      <div class="team-section">
+        <div class="team-card">
+          <img src="https://www.w3schools.com/w3images/team2.jpg" alt="John" />
+          <h2>John Doe</h2>
+          <h4>CEO & Founder</h4>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum.</p>
+          <button>Contact</button>
+        </div>
+
+        <div class="team-card">
+          <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Jane" />
+          <h2>Jane Doe</h2>
+          <h4>Architect</h4>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum.</p>
+          <button>Contact</button>
+        </div>
+
+        <div class="team-card">
+          <img src="https://www.w3schools.com/w3images/team3.jpg" alt="Mike" />
+          <h2>Mike Ross</h2>
+          <h4>Architect</h4>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum.</p>
+          <button>Contact</button>
+        </div>
+
+        <div class="team-card">
+          <img src="https://www.w3schools.com/w3images/team4.jpg" alt="Dan" />
+          <h2>Dan Star</h2>
+          <h4>Architect</h4>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum.</p>
+          <button>Contact</button>
+        </div>
+      </div>
+      <br /><br />
+
+      <div class="contact-section">
+        <h2>Contact</h2>
+        <p>Let's get in touch and talk about your next project.</p>
+
+        <form class="contact-form">
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="text" placeholder="Subject" required />
+          <textarea rows="5" placeholder="Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <img
+        class="bottom-img"
+        src="https://www.w3schools.com/w3images/map.jpg"
+      />
+
+      <div class="foot">
+        <p>Powered By W3c Schools.</p>
+        <p>Modified By Likhith</p>
+      </div>
+    </main>
+  </body>
+</html>
