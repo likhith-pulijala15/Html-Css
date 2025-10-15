@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .nav {
+        background-color: #f5f5f5;
+        padding: 10px;
+        padding-left: 600px;
+      }
+
+      .sub-nav {
+        display: inline-block;
+        position: relative;
+        margin-right: 30px;
+        cursor: pointer;
+      }
+
+      .sub-nav:hover {
+        color: green;
+      }
+
+      .dropdown {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        margin-top: 10px;
+        width: 200px;
+        background-color: white;
+        border-top: 2px solid green;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        min-width: 150px;
+      }
+
+      .sub-nav:hover .dropdown {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      .dropdown a {
+        display: block;
+        padding: 8px 12px;
+        text-decoration: none;
+        color: black;
+      }
+
+      .dropdown a:hover {
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="sub-nav">
+        Courses
+        <div class="dropdown">
+          <a href="#">Classroom Program</a>
+          <a href="#">DSA</a>
+          <a href="#">GATE 2026</a>
+          <a href="#">ML & Data Science</a>
+          <a href="#">Development</a>
+          <a href="#">Cloud / DevOps</a>
+          <a href="#">Programming Languags</a>
+        </div>
+      </div>
+
+      <div class="sub-nav">
+        Tutorials
+        <div class="dropdown">
+          <a href="#">Python</a>
+          <a href="#">Java</a>
+          <a href="#">DSA</a>
+          <a href="#">ML & Data Science</a>
+          <a href="#">Interview Corner</a>
+          <a href="#">Programming Languages</a>
+          <a href="#">Web Development</a>
+          <a href="#">GATE</a>
+          <a href="#">CS Subjects</a>
+          <a href="#">DevOps</a>
+          <a href="#">Software and Tools</a>
+        </div>
+      </div>
+
+      <div class="sub-nav">
+        Practice
+        <div class="dropdown">
+          <a href="#">Practice Coding Problems</a>
+          <a href="#">Nation Skillup - Free courses</a>
+          <a href="#">Problem of the Day</a>
+        </div>
+      </div>
+
+      <div class="sub-nav">
+        Jobs
+        <div class="dropdown">
+          <a href="#">Apply Now!</a>
+          <a href="#">Post Jobs</a>
+          <a href="#">Jobs Updates</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
