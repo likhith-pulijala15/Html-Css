@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Times New Roman", Georgia, serif;
+        line-height: 1.5;
+      }
+
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        box-shadow: 5px 5px 10px gray;
+        z-index: 2;
+      }
+
+      .nav-container a {
+        font-size: 15px;
+        letter-spacing: 4px;
+        margin-left: 15px;
+        padding: 10px;
+      }
+
+      .nav-container a:hover {
+        background-color: rgba(221, 221, 221);
+      }
+
+      .nav-title {
+        margin-left: 30ps;
+      }
+
+      .nav-buttons {
+        margin-right: 60px;
+      }
+
+      .burger-img {
+        height: 720px;
+        width: 100%;
+        position: relative;
+      }
+
+      .burger-text {
+        position: absolute;
+        top: 625px;
+        left: 30px;
+        font-weight: 100;
+        font-size: 36px;
+      }
+
+      .about {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 60px auto;
+      }
+
+      .about-img {
+        height: 620px;
+        width: 500px;
+        display: inline-block;
+        border-radius: 10px;
+      }
+
+      .about-text {
+        padding-top: 0;
+        width: 500px;
+        margin-left: 40px;
+        letter-spacing: 6px;
+      }
+
+      .about h1 {
+        font-family: "Playfair Display";
+        letter-spacing: 5px;
+        font-size: 36px;
+        font-weight: 300;
+        text-align: center;
+      }
+
+      .about h5 {
+        text-align: center;
+        font-family: "Playfair Display";
+        letter-spacing: 5px;
+        font-size: 20px;
+        font-weight: 300;
+      }
+
+      .about-text p {
+        letter-spacing: 1px;
+        font-size: 18px;
+      }
+
+      .about-span {
+        color: grey;
+        letter-spacing: 1px;
+      }
+
+      hr {
+        color: grey;
+        font-weight: 100;
+        margin: 20px 180px;
+      }
+
+      .Menu {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 60px;
+        max-width: 1100px;
+        margin: 80px auto;
+      }
+
+      .Menu-text {
+        width: 45%;
+        text-align: left;
+      }
+
+      .Menu h1 {
+        font-size: 36px;
+        text-align: center;
+        font-family: "Playfair Display", serif;
+        letter-spacing: 5px;
+        font-weight: 400;
+        margin-bottom: 50px;
+      }
+
+      .Menu h4 {
+        font-family: "Playfair Display", serif;
+        letter-spacing: 3px;
+        font-weight: 400;
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+
+      .Menu p {
+        color: grey;
+        margin-bottom: 30px;
+        font-size: 16px;
+      }
+
+      .Menu-img {
+        width: 45%;
+        height: auto;
+        border-radius: 10px;
+        opacity: 0.9;
+      }
+
+      .contact-container {
+        max-width: 800px;
+        margin: 100px auto;
+        padding: 0 20px;
+      }
+
+      .contact-container h1 {
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        letter-spacing: 5px;
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      .contact-container p {
+        font-size: 17px;
+        line-height: 1.6;
+        color: #000;
+      }
+
+      .contact-container b {
+        color: #607d8b;
+        font-size: 18px;
+      }
+
+      form {
+        margin-top: 30px;
+      }
+
+      input[type="text"],
+      input[type="number"],
+      input[type="datetime-local"] {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        padding: 12px 0;
+        font-size: 16px;
+        font-family: "Times New Roman", serif;
+        outline: none;
+        background: transparent;
+        margin-bottom: 15px;
+      }
+
+      input::placeholder {
+        color: #777;
+      }
+
+      button {
+        border: none;
+        background-color: #f1f1f1;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      button:hover {
+        background-color: #ccc;
+      }
+
+      footer {
+        background-color: #ccc;
+        padding-top: 40px;
+        text-align: center;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="nav-title">
+          <a>Gourmet au Catering</a>
+        </div>
+        <div class="nav-buttons">
+          <a>About</a>
+          <a>Menu</a>
+          <a>Contact</a>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="head-container">
+        <img
+          class="burger-img"
+          src="https://www.w3schools.com/w3images/hamburger.jpg"
+        />
+        <h1 class="burger-text">Le Catering</h1>
+      </div>
+    </header>
+    <main>
+      <div class="about">
+        <img
+          class="about-img"
+          src="https://www.w3schools.com/w3images/tablesetting2.jpg"
+        />
+
+        <div class="about-text">
+          <h1>About Catering</h1>
+
+          <h5>Tradition since 1889</h5>
+          <p>
+            The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor
+            sit amet, consectetur adipiscing elit consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.We only use seasonal ingredients.
+          </p>
+          <span class="about-span"
+            >Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum consectetur adipiscing
+            elit, sed do eiusmod temporincididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.</span
+          >
+        </div>
+      </div>
+      <br />
+      <hr />
+
+      <div class="Menu">
+        <div class="Menu-text">
+          <h1>Our Menu</h1>
+
+          <h4>Bread Basket</h4>
+          <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+
+          <h4>Honey Almond Granola with Fruits</h4>
+          <p>
+            Natural cereal of honey toasted oats, raisins, almonds and dates
+            7.00
+          </p>
+
+          <h4>Belgian Waffle</h4>
+          <p>Vanilla flavored batter with malted flour 7.50</p>
+
+          <h4>Scrambled eggs</h4>
+          <p>
+            Scrambled eggs, roasted red pepper and garlic, with green onions
+            7.50
+          </p>
+
+          <h4>Blueberry Pancakes</h4>
+          <p>With syrup, butter and lots of berries 8.50</p>
+        </div>
+        <img
+          class="Menu-img"
+          src="https://www.w3schools.com/w3images/tablesetting.jpg"
+        />
+      </div>
+      <br />
+      <hr />
+
+      <div class="contact-container">
+        <h1>Contact</h1>
+        <br />
+        <p>
+          We offer full-service catering for any event, large or small. We
+          understand your needs and we will cater the food to satisfy the
+          biggerst criteria of them all, both look and taste. Do not hesitate to
+          contact us.
+        </p>
+        <p><b>Catering Service, 42nd Living St, 43043 New York, NY</b></p>
+        <p>
+          You can also contact us by phone 00553123-2323 or email
+          catering@catering.com, or you can send us a message here:
+        </p>
+        <form target="_blank">
+          <p><input type="text" placeholder="Name" required name="Name" /></p>
+          <p>
+            <input
+              type="number"
+              placeholder="How many people"
+              required
+              name="People"
+            />
+          </p>
+          <p>
+            <input
+              type="datetime-local"
+              placeholder="Date and Time"
+              value="2020-11-16T20:00"
+            />
+          </p>
+          <p>
+            <input
+              type="text"
+              placeholder="Message \ Special Requirements"
+              required
+              name="Message"
+            />
+          </p>
+          <p><button type="submit">Send Message</button></p>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>Powered by w3schools</p>
+    </footer>
+  </body>
+</html>
